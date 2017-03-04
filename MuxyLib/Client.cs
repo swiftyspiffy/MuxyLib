@@ -161,6 +161,7 @@ namespace MuxyLib
             {
                 url = url.Replace("https://", "");
                 url = url.Replace("http://", "");
+                url = url.Replace("/alert/", "/ws/");
             }
             return $"ws://{url}";
         }
