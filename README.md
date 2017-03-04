@@ -17,6 +17,7 @@ MuxyLib is a .NET library that can interface with the Muxy donation service. It 
  - `OnSessionChange` - Fires when Muxy detects session change (online/offline).
  - `OnHosted` - Fires when Muxy detects a user has started hosting the channel.
  - `OnDonation` - Fires when Muxy receives a donation for the specified channel.
+ 
 *****
 
 ### Example Implementations
@@ -47,6 +48,7 @@ private static void onDonation(object sender, MuxyLib.Events.Client.OnDonationAr
 ```
 
 *****
+
 ### Installation/Download
 #### [NuGet](https://www.nuget.org/packages/MuxyLib/)
 
@@ -60,13 +62,16 @@ MuxyLib
 ```
 #### Build
 In addition to the NuGet package listing, you are also welcome to fork/clone this repo and build the project yourself, modifying it as you need.
+
 *****
 
 ### Dependencies
 * Newtonsoft.Json 7.0.1+ ([nuget link](https://www.nuget.org/packages/Newtonsoft.Json/7.0.1))
 * WebSocketSharp-NonPreRelease ([nuget link](https://www.nuget.org/packages/WebSocketSharp-NonPreRelease/))
+
 *****
 
 ### License
 A license file exists in this project by the name of LICENSE .
+
 *****
