@@ -8,6 +8,7 @@ MuxyLib is a .NET library that can interface with the Muxy donation service. It 
  - `OnConnected` - Fires when connected to Muxy service.
  - `OnDisconnected` - Fires when disconnected from Muxy service.
  - `OnClientError` - Fires when an error occurs in the client.
+
 #### Muxy Specific
  - `OnPing` - Fires when Muxy sends a Ping.
  - `OnBits` - Fires when Muxy detects a user sent bits in chat.
@@ -17,6 +18,7 @@ MuxyLib is a .NET library that can interface with the Muxy donation service. It 
  - `OnHosted` - Fires when Muxy detects a user has started hosting the channel.
  - `OnDonation` - Fires when Muxy receives a donation for the specified channel.
 *****
+
 ### Example Implementations
 While the Muxy Test Application provided in this repository demos all of the events in this library, initialization and a few events are shown below in a console app implementation:
 ```csharp
@@ -43,6 +45,7 @@ private static void onDonation(object sender, MuxyLib.Events.Client.OnDonationAr
     Console.WriteLine($"A donation was just received from {e.Viewer.Name} in the amount of {e.Extra.Amount}!");
 }
 ```
+
 *****
 ### Installation/Download
 #### [NuGet](https://www.nuget.org/packages/MuxyLib/)
@@ -58,10 +61,12 @@ MuxyLib
 #### Build
 In addition to the NuGet package listing, you are also welcome to fork/clone this repo and build the project yourself, modifying it as you need.
 *****
+
 ### Dependencies
 * Newtonsoft.Json 7.0.1+ ([nuget link](https://www.nuget.org/packages/Newtonsoft.Json/7.0.1))
 * WebSocketSharp-NonPreRelease ([nuget link](https://www.nuget.org/packages/WebSocketSharp-NonPreRelease/))
 *****
+
 ### License
 A license file exists in this project by the name of LICENSE .
 *****
